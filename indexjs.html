@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console e Window </title>
+    <!-- css externo -->
+    <link rel="stylesheet" href="css/styles.css" </head>
+
+<body>
+    <h1>Olá Mundo!</h1>
+    <p>Vencemos o início</p>
+    <!-- javascript -->
+    <script>
+        // O window.alert() exibe uma caixa de diálogo simples com uma mensagem e um botão "OK".
+        window.alert("vamos começar o desespero!");
+        // O window.prompt() solicita uma entrada de dados do usuário, exibindo uma caixa de texto.
+        let nome = window.prompt("Qual é o seu nome?");
+        console.log("Nome informado: " + nome);
+        window.confirm("Estão entendendo?")
+
+        // // O window.open() abre uma nova janela ou aba com o URL especificado.
+        // window.open("https://www.google.com", "_blank");
+
+        // O window.setTimeout() executa uma função após um intervalo de tempo definido (em milissegundos).
+        window.setTimeout(function () {
+            console.log("Executando após 2 segundos");
+        }, 2000); // 2000 milissegundos = 2 segundos
+
+        // //Fecha a janela atual
+        // window.close()
+
+        // **Temporizadores**
+        //  Executa uma função após um determinado tempo (milissegundos).
+        //window.setInterval(function());
+        //Cancela uma função repetida definida por setInterval.
+        window.clearInterval(intervalID)
+
+        // **Manipulação de Janelas** Rola a página para a posição especificada
+        window.scroll(x, y);
+
+        //**Histórico de Navegação**
+        // window history: Objeto que contém o histórico de navegação da aba. Métodos principais:
+        //Retorna à página anterior.
+        window.history.back();
+        //Vai para a próxima página.
+        window.history.forward();
+        //Navega `n` páginas no histórico.
+        window.history.go(2);
+
+        //**Métodos de Navegação**
+        // Objeto que contém a URL da página atual e permite redirecionamentos  
+        window.location.href = "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal";
+
+    </script>
+</body>
+
+</html>
